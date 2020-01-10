@@ -2,7 +2,7 @@
 
 if [ $# -ne 2 ]; then
   echo "Usage: sh s3sync.sh [s3://Source path] [s3://Target path]"
-  exit 0
+  exit 1
 fi
 
 startTime=$(date +%s)
