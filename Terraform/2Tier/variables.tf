@@ -1,4 +1,19 @@
 ############## [variable] ################
+provider "aws" {
+  region = var.region
+}
+
+variable "region" {
+    description = "리전을 선택합니다. e.g: ap-northeast-2"
+    type        = string
+    default     = "ap-northeast-2"
+}
+
+variable "name" {
+    description = "프로젝트 이름을 입력합니다."
+    type        = string
+    default     = "terra-demo"
+}
 
 variable "allow_ip_address" {
     description = "SSH 접속을 허용할 IP list"
@@ -18,18 +33,6 @@ variable "key_name" {
     description = "EC2 접속시 사용할 키페어 이름"
     type        = string
     default     = "ssh-key"
-}
-
-variable "region" {
-    description = "리전을 선택합니다. e.g: ap-northeast-2"
-    type        = string
-    default     = "ap-northeast-2"
-}
-
-variable "name" {
-    description = "프로젝트 이름을 입력합니다."
-    type        = string
-    default     = "terra-demo"
 }
 
 variable "vpc_cidr" {
@@ -88,6 +91,6 @@ variable "private_subnets" {
 
 variable "tags" {
     default = {
-        "MadeBy" = "terraform"
+        "MadeBy" = "mzc-ckj"
     }
 }
