@@ -1,6 +1,5 @@
 Terraform
 ==========
-***
 
 ## 1. MegazoneCloud Terraform WorkShop
 요기 클릭 ☞ [MegazoneCloud Terraform WorkShop](https://mzcdev.github.io/terraform-workshop/ "mzc terraform link")    
