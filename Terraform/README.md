@@ -1,13 +1,13 @@
 Terraform
 ==========
 
-테라폼 작업 모음
+모음
 ----------
 
-## MegazoneCloud Terraform WorkShop
-요기 클릭 ☞ [Megazone Terraform WorkShop](https://mzcdev.github.io/terraform-workshop/ "mzc terraform link")
+## 1. MegazoneCloud Terraform WorkShop
+요기 클릭 ☞ [MegazoneCloud Terraform WorkShop](https://mzcdev.github.io/terraform-workshop/ "mzc terraform link")
 
-## Install Terraform Tools
+## 2. Install Terraform Tools
 	curl -sL opspresso.com/tools | bash
 
 다음의 툴이 설치 됩니다.
