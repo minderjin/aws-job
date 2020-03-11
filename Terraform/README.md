@@ -5,7 +5,7 @@ Terraform
 ----------
 
 ## MegazoneCloud Terraform WorkShop
-요기요 ==> [Megazone Terraform WorkShop](https://mzcdev.github.io/terraform-workshop/ "mzc terraform link")
+요기 클릭 ☞ [Megazone Terraform WorkShop](https://mzcdev.github.io/terraform-workshop/ "mzc terraform link")
 
 ## Install Terraform Tools
 	curl -sL opspresso.com/tools | bash
