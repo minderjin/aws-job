@@ -1,0 +1,6 @@
+#!/bin/sh
+
+for IP in `cat list.txt`
+do
+        aws ec2 create-route --route-table-id rtb-0e447320e3ca2612e --destination-cidr-block $IP --transit-gateway-id tgw-0a5b494de7c78ffda
+done

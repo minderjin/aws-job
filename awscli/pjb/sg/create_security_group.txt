@@ -1,0 +1,16 @@
+#!/bin/sh
+#create security group rules
+
+for LIST in `cat list.txt`
+do
+aws ec2 authorize-security-group-ingress --group-id sg-066ed7237f641df2f --protocol tcp --port 80 --cidr $LIST
+aws ec2 authorize-security-group-ingress --group-id sg-066ed7237f641df2f --protocol tcp --port 443 --cidr $LIST
+aws ec2 authorize-security-group-ingress --group-id sg-066ed7237f641df2f --protocol tcp --port 3389 --cidr $LIST
+aws ec2 authorize-security-group-ingress --group-id sg-066ed7237f641df2f --protocol tcp --port 1433 --cidr $LIST
+aws ec2 authorize-security-group-ingress --group-id sg-066ed7237f641df2f --protocol tcp --port 8080-8090 --cidr $LIST
+aws ec2 authorize-security-group-ingress --group-id sg-066ed7237f641df2f --protocol tcp --port 8433 --cidr $LIST
+aws ec2 authorize-security-group-ingress --group-id sg-066ed7237f641df2f --protocol tcp --port 25 --cidr $LIST
+aws ec2 authorize-security-group-ingress --group-id sg-066ed7237f641df2f --protocol tcp --port 50001-50002 --cidr $LIST
+aws ec2 authorize-security-group-ingress --group-id sg-066ed7237f641df2f --protocol tcp --port 60001-60002 --cidr $LIST
+done
+
